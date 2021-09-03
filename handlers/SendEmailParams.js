@@ -5,7 +5,7 @@ const ses = new AWS.SES({
     region: "us-east-2", // region donde esta configurado el servicio SES
 });
 
-//EMAIL CON ENTRADA DE UN SOLO PARAMETRO (CODIGO)
+//EMAIL TIPO POST CON VARIOS PARAMETROS DE ENTRADA
 module.exports.sendEmail = (event, context, callback) => {
     var params = {
         Destination: {

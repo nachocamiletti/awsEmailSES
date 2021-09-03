@@ -31,3 +31,12 @@ functions:
       - httpApi:
           path: /emailSES/sendEmail/{ToEmail}/{Code}
           method: get
+
+  sendEmailParameters:
+    handler: handlers/sendEmailParameters.sendEmailParameters
+    events:
+      - httpApi:
+          path: /emailSES/sendEmailParameters
+          method: post
+
+
